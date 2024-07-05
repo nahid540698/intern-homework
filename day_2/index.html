@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-100 flex items-center justify-center min-h-screen">
+    <div class="bg-gray-800 text-white rounded-lg p-6 w-[500px] h-[450px] border-blue-500 border-2">
+
+        <!-- heading -->
+         <h1 class="text-center font-bold text-2xl mb-2">To Do List</h1>
+         <!-- end heading -->
+
+         <div class="mb-4 flex text-center justify-center gap-3">
+            <input id="new-task" class="rounded-lg text-gray-800">
+            <button id="add-btn" class="bg-blue-500 p-2 rounded-lg">Add</button>
+         </div>
+
+         <div id="Task List">
+            <h1 class="text-center text-xl my-5">Task List</h1>
+
+            <!-- box -->
+             <div class="flex items-center mb-2 border p-2 rounded-lg">
+                <input type="checkbox" class="mr-2">
+                <span class="flex-1">wash dishes</span>
+                <button class="text-red-500">Delete</button>
+                <button class="text-red-500 ml-2">Edit</button>
+             </div>
+             <!-- end box -->
+
+             <!-- box -->
+             <div class="flex items-center mb-2 border p-2 rounded-lg">
+                <input type="checkbox" class="mr-2">
+                <span class="flex-1 line-through text-gray-500">edit resume</span>
+                <button class="text-red-500">Delete</button>
+                <button class="text-red-500 ml-2">Edit</button>
+             </div>
+             <!-- end box -->
+
+             <!-- box -->
+              <div class="border p-2 rounded-lg flex items-center">
+                <input type="checkbox" class="mr-2">
+                <span class="flex-1">finish Codedex course</span>
+                <button class="text-red-500">Delete</button>
+                <button class="text-red-500 ml-2">Edit</button>
+              </div>
+                <!-- end box -->
+
+                <hr class="border-blue-800 my-5 border-2">
+
+                <!-- text -->
+                <div class=" text-center">
+                    <span>Completed:1 Uncompleted:2</span>
+                </div>
+                <!-- end text -->
+
+              
+         </div>
+
+    </div>
+
+
+</body>
+</html>
